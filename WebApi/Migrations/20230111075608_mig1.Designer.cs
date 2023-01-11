@@ -9,8 +9,8 @@ using WebApi.DAL;
 namespace WebApi.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230108195223_mig_category")]
-    partial class mig_category
+    [Migration("20230111075608_mig1")]
+    partial class mig1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

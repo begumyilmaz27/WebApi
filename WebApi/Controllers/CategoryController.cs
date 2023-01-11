@@ -39,5 +39,16 @@ namespace WebApi.Controllers
             context.SaveChanges();
             return Ok();
         }
+        [HttpPut]
+        public IActionResult CategoryUpdate(Category category)
+        {
+            var values = context.Categories.Find(category.CategoryID);
+            values.Description = category.Description;
+            values.CategoryID = category.CategoryID;    
+            values.CategoryName = category.CategoryName;
+            values.Status = category.Status;
+            context.SaveChanges();
+            return Ok();
+        }
     }
 }

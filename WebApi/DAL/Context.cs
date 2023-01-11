@@ -7,7 +7,7 @@ namespace WebApi.DAL
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=DESKTOP-MC9V08U\\SQLEXPRESS;initial catalog=ApiDb;integrated security=true");
+            optionsBuilder.UseSqlServer("server=BEGUM;initial catalog=ApiDb;integrated security=true");
         }
         public DbSet<Category> Categories  { get; set; }
     }
